@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomulario de Información</title>
+    <link rel="stylesheet" href="estilos2.css">
+</head>
+<body>
+    <h1>Formulario de Información</h1>
+    <form action="formulario.php" method="post">
+        <fieldset>
+            <legend> Sus Datos</legend>
+           
+            <p>
+                <label>Nombre y apellidos: 
+                    <input type="text" id="nom" name="nom" maxlength="50">
+                </label>
+            </p>
+            <p>
+                <label>Contraseña: 
+                    <input type="password" name="contrase" id="constrase" maxlength="8">
+                </label>
+            </p>
+            <p>
+                <label>Usuario: 
+                    <input type="text" id="usu" name="usu" placeholder="anónimo" disabled>
+                </label>
+            </p>
+            <p>
+                <label>Nivel:</label>
+                <div><input type="radio" id="nivel" name="nivel" value="pro"> Profesional</div>
+                <div><input type="radio" id="nivel" name="nivel" value="avan" checked> Avanzado</div>
+                <div><input type="radio" id="nivel" name="nivel" value="prin"> Principiante</div>
+            </p>
+            
+        </fieldset>
+
+        <div>
+            <label> Nacionalidad: 
+                <select name="nacionalidad" id="">
+                    <option value="esp">Español</option>
+                    <option value="ue">Unión Europea</option>
+                    <option value="noue"> Fuera de la UE</option>
+                </select>
+            </label>
+        </div>
+
+        <div>
+            <label>Descripción:
+                <textarea name="descripcion" id="descripcion"></textarea>
+            </label>
+        </div>
+
+        <div>
+            <label>
+                <input type="checkbox" name="info" checked>
+                Deseo recibir información sobre novedades y ofertas
+            </label>
+        </div>
+
+        <div>
+            <label>
+                <input type="checkbox" name="condiciones">
+                Declaro haber leído y aceptar las condiciones generales
+                del programa y la normativa sobre protección de datos
+            </label>
+        </div>
+
+        <div>
+            <label>Adjuntar foto:
+                <input type="file" name="foto">
+            </label>
+        </div>
+
+        <div>
+            <label>
+                <input type="submit" value="Enviar">
+            </label>
+            <label>
+                <input type="reset" value="Borrar Datos">
+            </label>
+        </div>
+        
+    </form>
+    
+    <a href="index.html">Volver a la página de Incio</a>
+    
+    
+</body>
+</html>
